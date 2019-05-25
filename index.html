@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>扫雷 -林铭</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+</head>
+
+<body>
+    <!-- -->
+    <div class="game">
+        <div class="title"><i class="fa fa-bomb" aria-hidden="true"></i>扫雷</div>
+        <div class="setting">
+            <div class="levels">
+                <button class="level" data-level="easy">简单</button>
+                <button class="level" data-level="mid">中级</button>
+                <button class="level" data-level="hard">困难</button>
+                <button class="level" data-level="custom">自定义</button>
+            </div>
+            <div class="size">
+                雷区尺寸：
+                <input type="number" min="8" max="30" value="8" disabled="disabled">×
+                <input type="number" min="8" max="30" value="8" disabled="disabled"></div>
+            <div class="mine">
+                地雷数量：
+                <input type="number" min="1" value="8" disabled="disabled">
+            </div>
+            <div class="bottom"><button class="confirm">确定</button></div>
+        </div>
+        <div class="mine-body" style="display: none;">
+            <div class="info">
+                <div class="timer">00:00</div>
+                <div class="reset"><button>重来</button></div>
+                <div class="back"><button>返回</button></div>
+                <div class="mine-count">剩余:1</div>
+            </div>
+            <div class="board mid">
+            </div>
+        </div>
+        <div class="dialog" style="display: none;">
+            <div class="dialog-cover"></div>
+            <div class="dialog-container">
+                <div class="dialog-header">
+                    <div class="dialog-title">游戏结束</div>
+                </div>
+                <div class="dialog-content"></div>
+                <div class="dialog-footer"><button>关闭</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/MinesSweeper.js"></script>
+</body>
+
+</html>
