@@ -6,10 +6,6 @@
 
 ## Todo
 
-next 分支，指导用
-
-**WIP**
-
 - [ ] 抛弃 Jquery 控制 dom 元素
 - [ ] 使用 ES2015 语法
   - [ ] 或许使用`babel-standalone`获取兼容性支持
